@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="8" viewBox="0 0 5 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="870" y="1078" width="5" height="8" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Фигура_566_копия_6" data-name="Фигура 566 копия 6" class="cls-1" d="M870.744,1086.01l-0.755-.74,4.267-4.16,0.754,0.74Zm0-8.02-0.755.73,4.267,4.17,0.754-.74Z" transform="translate(-870 -1078)"/>
+</svg>
