@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	overflow-x: hidden;
 }
 
@@ -14,6 +15,10 @@ input {
 	width: 100%;
 	padding: 0 12px;
 	box-sizing: border-box;
+}
+
+.wrap_mob_product {
+	padding: 0;
 }
 
 .on320,
@@ -193,9 +198,13 @@ header {
 
 /* ТОВАР */
 
-.tablinks, .tablinks2, .tablinks3, .tablinks4, .tablinks5 {
-    font-size: 11px;
-    padding-bottom: 8px;
+.tablinks,
+.tablinks2,
+.tablinks3,
+.tablinks4,
+.tablinks5 {
+	font-size: 11px;
+	padding-bottom: 8px;
 }
 
 .tabs-border {
@@ -206,6 +215,244 @@ header {
 	max-width: 100%;
 }
 
+.advants {
+	padding: 24px 12px 10px 12px;
+}
+
+.advants .section-heading {
+	text-align: center;
+	font-size: 20px;
+}
+
+.basic-info {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	box-sizing: border-box;
+}
+
+.basic-info__media {
+	display: none;
+}
+
+.specifications {
+	display: none;
+}
+
+.product-offer_mob {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #f3f3f4;
+	padding: 20px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+	margin-top: 15px;
+}
+
+.product-offer_mob .tabs-border {
+	width: 234px;
+}
+
+.product-offer_mob .tablinks3 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.product-offer_mob .tabs-prod {
+	display: grid;
+	gap: 20px;
+	width: 100%;
+}
+
+.product-offer_mob .product-offer__names {
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 7px;
+}
+
+.product-offer_mob .product-offer__parameters {
+	margin-bottom: 14px;
+}
+
+.product-offer_mob .product-offer__parameters .btn {
+	background-image: url(images/arr_d_1_4.svg), linear-gradient(to bottom, #ffff 0%, #ffff 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: right 17px center, 0 0;
+}
+
+.product-offer_mob .product-offer__select {
+	background-image: url(images/arr_d_1_4.svg), linear-gradient(to bottom, #ffff 0%, #ffff 100%);
+	height: 42px;
+	border-radius: 25px;
+}
+
+.product-offer_mob .product-offer__names2 {
+	font-weight: 400;
+}
+
+
+.product-offer_mob .product-offer__count {
+	background-color: white;
+}
+
+.product-offer_mob .product-offer__price-buy {
+	display: grid;
+	width: 300px;
+}
+
+.product-offer_mob .product-offer__price-buy__price {
+	display: flex;
+	margin-bottom: 14px;
+	margin-top: -4px;
+}
+
+.product-offer_mob .product-offer__price-text {
+	margin: 0;
+	font-size: 22px;
+}
+
+.product-offer_mob .product-offer__price-buy .product-offer__names {
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding-top: 4px;
+	margin-left: 7px;
+}
+
+.product-offer_mob .btn_add_product {
+	width: 100%;
+	margin-left: 0;
+	height: 42px;
+	box-sizing: border-box;
+	border-radius: 24px;
+}
+
+.product-offer_mob .btn_add_product span {
+	font-size: 13px;
+	padding-right: 25px;
+	background: url(images/btn-buy-product.svg) no-repeat right center;
+	background-size: 21px;
+	font-weight: 400;
+}
+
+.product-offer_mob .btn_credit {
+	width: 100%;
+	margin-left: 0;
+	border-radius: 25px;
+	height: 42px;
+	box-sizing: border-box;
+	font-weight: 400;
+}
+
+.planshet-price_buy {
+	display: none;
+}
+
+.product-offer_mob .product-offer__price-buy__credit {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.product-offer_mob .product-offer__price-text2 {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.all-specifications_heading_mob {
+	display: block;
+}
+
+.planshet_specif_sum {
+	display: block;
+	width: 100%;
+	margin-top: -17px;
+	margin-bottom: 9px;
+}
+
+.delivery-info__ol {
+	grid-template-columns: 1fr;
+}
+
+.delivery-info__ol_li_text {
+	line-height: 14px;
+	margin-top: -10px;
+}
+
+.delivery-info__ol_li {
+	padding-right: 30px;
+	margin-top: -2px;
+	margin-bottom: 26px;
+}
+
+.specifications__ul-delivery li span:nth-child(odd),
+.specifications__ul-delivery li span:nth-child(even),
+.specifications__ul-delivery li {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.specifications__ul-delivery__adress li {
+	margin-bottom: -3px;
+}
+
+.specifications__ul-delivery__adress {
+	margin-bottom: 29px;
+}
+
+.delivery-info_mob .planshet_specif_sum {
+	margin-bottom: 27px;
+}
+
+.all-specifications {
+	grid-template-columns: 1fr;
+}
+
+.all-specifications table {
+	display: none;
+}
+
+.all-specifications table:first-child {
+	display: block;
+}
+
+.specifications-product tr {
+	height: 15px;
+}
+
+.nav-products {
+	display: none;
+}
+
+
+
+.specifications-product {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.description__stripe {
+	margin: 20px 0 20px 0;
+}
+
+.delivery-info_mob {
+	display: block;
+}
+
+.basic-info__media-mob {
+	display: block;
+	margin-top: -30px;
+	height: 175px;
+}
+
+.basic-info__media-mob .prod_list_slide img {
+	width: 175px;
+	height: 175px;
+}
+
+.basic-info__media-mob .prod_list_imgs {
+	height: 175px;
+}
 
 .home_top {
 	min-height: 100px;
@@ -327,7 +574,9 @@ header {
 	padding: 4px 0 16px 0;
 }
 
-.car_se_form_rem, .car_se_form_rem2, .car_se_form_rem3 {
+.car_se_form_rem,
+.car_se_form_rem2,
+.car_se_form_rem3 {
 	margin-top: -20px;
 }
 
@@ -339,7 +588,7 @@ header {
 .car_se_form2__visual {
 	display: grid;
 	grid-template-columns: 1fr;
-    vertical-align: middle;
+	vertical-align: middle;
 	margin: 0 auto;
 }
 
@@ -355,7 +604,7 @@ header {
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 46px auto 36px auto;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 .car_se_form2__visual2_left {
@@ -435,7 +684,7 @@ header {
 	margin: 20px 0 0 0;
 }
 
-.search_place  .search_inp {
+.search_place .search_inp {
 	width: 220px;
 	font-size: 11px;
 }
@@ -474,8 +723,8 @@ header {
 }
 
 .search_place_filtr5 {
-    top: 36px;
-    left: -262px;
+	top: 36px;
+	left: -262px;
 }
 
 .search_place_filtr5 .search_inp {
@@ -484,7 +733,7 @@ header {
 
 .car_se_form3 .btn_c4 {
 	top: 363px;
-    left: 40px;
+	left: 40px;
 	width: 105px;
 	padding: 4.5px 0;
 	height: 28px;
@@ -505,12 +754,12 @@ header {
 	width: 83px;
 	height: 28px;
 	top: -5px;
-	
+
 }
 
 .car_se_form_sort-check:checked+label::before {
-    background: #F5F5F5 url(images/del.svg) no-repeat 68px 11px;
-    background-size: 7px;
+	background: #F5F5F5 url(images/del.svg) no-repeat 68px 11px;
+	background-size: 7px;
 }
 
 .car_se_form_sort-check_p {
@@ -660,7 +909,27 @@ header {
 	color: #BC8E36;
 }
 
+.heading-product h1 {
+	font-size: 20px;
+	line-height: 22px;
+	width: auto;
+}
 
+.heading-product {
+	margin-top: 18px;
+	padding: 0 12px;
+}
+
+.heading-product .btn {
+	color: white;
+	width: 21px;
+}
+
+.icon-compare {
+	background: url(images/compare-product.svg) no-repeat;
+	background-position-x: 9px;
+	background-position-y: 10px;
+}
 
 
 #catalog {
@@ -993,9 +1262,16 @@ footer {
 }
 
 .popup__body {
-	width: 96%;
+	width: 100%;
 }
 
+
+.popup__close {
+	width: 14px;
+	height: 14px;
+	top: 13px;
+	right: 25px;
+}
 
 
 /* АВТОСЕРВИС */
@@ -1050,7 +1326,9 @@ footer {
 	width: 100%;
 }
 
-.services-list__ul__item_cont__price, .services-list__ul__item_cont .btn, .services-list__ul__item_cont__price-sale {
+.services-list__ul__item_cont__price,
+.services-list__ul__item_cont .btn,
+.services-list__ul__item_cont__price-sale {
 	width: 100%;
 }
 
@@ -1219,7 +1497,7 @@ footer {
 }
 
 .car-service-form-backgr {
-    padding: 0;
+	padding: 0;
 	background: white;
 }
 
@@ -1420,9 +1698,9 @@ footer {
 }
 
 .categories-tabs__list {
-    background: none;
-    gap: 20px;
-    border-bottom: 2px solid #f4f4fc;
+	background: none;
+	gap: 20px;
+	border-bottom: 2px solid #f4f4fc;
 	margin-left: 0;
 }
 
@@ -1628,7 +1906,7 @@ footer {
 	max-width: 120px;
 }
 
-.brands_mob_list li a > img {
+.brands_mob_list li a>img {
 	object-fit: contain;
 	height: 50px;
 }
@@ -1697,7 +1975,7 @@ footer {
 
 .grade__item {
 	margin-bottom: 6px;
-	justify-content:flex-start;
+	justify-content: flex-start;
 }
 
 .grade__list {
@@ -1745,4 +2023,766 @@ footer {
 .catalog_mob {
 	padding-bottom: 0;
 	margin: 0 0 -10px 0;
+}
+
+/* Калькулятор */
+
+.tire-calculator__wrapper {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.tire-calculator__block {
+	background: none;
+	padding-top: 33px;
+}
+
+.tire-calculator__list {
+	padding-left: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.h1_mob_calc {
+	margin-top: 20px;
+}
+
+.tire-calculator__item+.tire-calculator__item {
+	margin-top: 0;
+}
+
+.tire-calculator__item {
+	margin-top: -10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+}
+
+.recommended-parameters__more {
+	font-size: 13px;
+}
+
+.recommended-parameters__link {
+	font-size: 13px;
+	height: 20px;
+	line-height: 21px;
+}
+
+.tire-calculator__inner {
+	margin-top: -34px;
+}
+
+.tabs__content {
+	margin-top: 31px;
+}
+
+.recom_mob .recommended-parameters__list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
+}
+
+.recom_mob .recommended-parameters__link {
+	width: 100%;
+	margin-right: 0;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.recom_mob .recommended-parameters__list li:nth-child(5),
+.recom_mob .recommended-parameters__list li:nth-child(6) {
+	display: none;
+}
+
+.recom_mob .recommended-parameters__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 38px;
+}
+
+.recom_mob .recommended-parameters__link {
+	width: 90%;
+	font-size: 10px;
+}
+
+.section-title {
+	padding: 20px 0;
+}
+
+
+.recommended .tabs-border {
+	width: 200px;
+}
+
+.recommended2 {
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+/* БЛОГ */
+
+.blog_mob {
+	margin-top: 20px;
+}
+
+.slide-blogs {
+	width: auto;
+	height: auto;
+}
+
+.slide-blogs_img {
+	width: auto;
+}
+
+.slick-slide img {
+	height: 100%;
+	width: 100%;
+}
+
+.slide-blogs_cont__title {
+	font-size: 13px;
+	line-height: 13px;
+}
+
+.slide-blogs_cont {
+	padding: 10px;
+	height: 100px;
+}
+
+.slide-blogs_cont__data .btn {
+	min-height: 20px;
+	font-size: 10px;
+}
+
+.slide-blogs_cont__data span {
+	font-size: 9px;
+}
+
+.slide-blogs_cont__data {
+	bottom: 12px;
+}
+
+.head-articles {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 0;
+	width: 100%;
+}
+
+.head-articles .orders {
+	margin-left: 0;
+	margin-top: -14px;
+	margin-bottom: 6px;
+}
+
+.articles-prev li {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.articles-prev li img {
+	margin: 0 0 14px 0;
+	width: 100%;
+}
+
+.articles-prev__text_title {
+	font-size: 13px;
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
+.articles-prev__text_data .btn {
+	font-size: 11px;
+}
+
+.articles-prev__text_data span {
+	font-size: 11px;
+	line-height: 21px;
+}
+
+/* Сравнение */
+
+.compare {
+	position: relative;
+	margin-top: 20px;
+	padding: 0;
+}
+
+.compare__arrows_arrow {
+	top: -1000px;
+}
+
+.compare__arrows_arrow4 {
+	top: -1000px;
+}
+
+.compare__arrows_arrow3 {
+	top: 0;
+	left: 0px;
+}
+
+.compare__arrows_arrow2 {
+	top: 7px;
+	right: 12px;
+}
+
+.prods-compare__imgs_item_name {
+	width: 100px;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+.prods-compare__imgs_item {
+	width: 168px;
+}
+
+.prods-compare__imgs_item_img {
+	height: 56px;
+}
+
+.prods-compare__param__items_item {
+	width: 168px;
+}
+
+.prods-compare__param__type {
+	font-size: 10px;
+	letter-spacing: 0.6px;
+}
+
+.compare__arrows {
+	margin-top: 207px;
+	width: 100%;
+	height: 40px;
+	background: none;
+	z-index: 0;
+}
+
+.compare .tabs-border {
+	position: relative;
+	border-radius: 0;
+	border: none;
+	padding-bottom: 7px;
+	box-shadow: inset 0px -2px rgba(244, 244, 252, 1);
+	height: 24px;
+	margin-left: 12px;
+	margin-top: -16px;
+	z-index: 10000;
+}
+
+.compare .tab-prod {
+	border-right: none;
+	padding: 0;
+	padding-right: 20px;
+}
+
+.compare .tablinks {
+	font-weight: 700;
+	font-size: 13px;
+	padding-bottom: 6px;
+}
+
+.compare h1 {
+	padding-left: 12px;
+	margin-bottom: 14px;
+}
+
+.compare-parameters {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.compare-filter__param {
+	font-size: 10px;
+}
+
+.compare-filter {
+	width: 310px;
+	height: 29px;
+	margin-left: 12px;
+	margin-top: 18px;
+	margin-bottom: 10px;
+}
+
+.compare-filter__param {
+	padding-top: 5px;
+}
+
+.compare-parameters__del {
+	font-size: 11px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-left: 14px;
+}
+
+.icon-basket-del {
+	background: url(images/basket-del.svg) no-repeat;
+	background-position-x: 146px;
+	background-position-y: 2px;
+}
+
+.prods-compare {
+	margin-bottom: 41px;
+}
+
+.sticky-nav-compare .prods-compare__imgs_item_name {
+	font-size: 9px;
+	line-height: 11px;
+}
+
+.sticky-nav-compare {
+	height: 111px;
+}
+
+.sticky-nav-compare .prods-compare__imgs_item_img {
+	height: 55px;
+}
+
+.compare__arrows2 {
+	width: 100%;
+	z-index: 2;
+}
+
+.sticky-nav-compare .compare__arrows_arrow2 {
+	position: absolute;
+	top: -172px;
+	right: 14px;
+}
+
+.prods-compare__imgsWrap-sticky {
+	width: 100%;
+}
+
+.sticky-nav-compare .prods-compare__imgs {
+	position: relative;
+	z-index: 1;
+}
+
+.sticky-nav-compare .compare__arrows_arrow3 {
+	top: -179px;
+	left: -5px;
+}
+
+
+/* ПОПАП размер шин */
+
+.popup__selection-tires {
+	width: 100%;
+	padding: 20px 15px;
+}
+
+.popup__selection-tires_head {
+	font-size: 15px;
+}
+
+.popup__selection-tires h2 {
+	margin-bottom: 22px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(1),
+.popup__selection-tires_back .car_se_form_li:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(2),
+.popup__selection-tires_back .car_se_form_li:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 154px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(3),
+.popup__selection-tires_back .car_se_form_li:nth-child(3) {
+	position: absolute;
+	top: 74px;
+	left: 0;
+	width: 90px;
+}
+
+.popup__selection-tires_front .car_se_form_sep:nth-child(4),
+.popup__selection-tires_back .car_se_form_sep:nth-child(4) {
+	position: absolute;
+	top: 108px;
+	left: 96px;
+	display: block !important;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(5),
+.popup__selection-tires_back .car_se_form_li:nth-child(5) {
+	position: absolute;
+	top: 74px;
+	left: 107px;
+	width: 90px;
+}
+
+.popup__selection-tires_front .car_se_form_sep:nth-child(6),
+.popup__selection-tires_back .car_se_form_sep:nth-child(6) {
+	position: absolute;
+	top: 108px;
+	left: 201px;
+	display: block !important;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(7),
+.popup__selection-tires_back .car_se_form_li:nth-child(7) {
+	position: absolute;
+	top: 74px;
+	left: 213px;
+	width: 90px;
+}
+
+.popup__selection-tires_front .car_se_form_li2:nth-child(8),
+.popup__selection-tires_back .car_se_form_li2:nth-child(8) {
+	position: absolute;
+	top: 79px;
+	left: 510px;
+}
+
+.popup__selection-tires .car_se_form_li {
+	width: 142px;
+}
+
+.popup__selection-tires .car_se_form_add3 {
+	margin-top: 170px;
+}
+
+.popup__selection-tires .car_se_form_rem3 {
+	margin-top: 170px;
+}
+
+.popup__selection-tires .basket-form__btn-form {
+	margin-top: 18px;
+}
+
+/* ПОПАП Запрос на торг */
+
+.popup__request {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.popup__request_form {
+	width: 100%;
+}
+
+.popup__request_cont h2 {
+	width: 100%;
+}
+
+.popup__request_cont {
+	width: 100%;
+}
+
+.popup__request_cont_inp {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.basket-form__delivery__forms_country {
+	border-radius: 25px;
+	width: 100%;
+}
+
+.basket-form__delivery__forms_city {
+	border-radius: 25px;
+	width: 100%;
+}
+
+.basket-form__delivery__forms_index {
+	border-radius: 25px;
+	width: 87.5%;
+}
+
+.popup__request_cont_inp_adress .basket-form__delivery__forms_street {
+	border-radius: 25px;
+	width: 87.5%;
+}
+
+.car_se_form_top_home__selects {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.popup__request textarea {
+	width: 87.5%;
+}
+
+.popup__request_sum {
+	width: 100%;
+}
+
+.popup__request_cont h2 {
+	margin-bottom: 21px;
+}
+
+.mail_request {
+	margin-left: 0;
+}
+
+.price_request_inp {
+	width: 96%;
+	margin-bottom: 10px;
+}
+
+.popup__request .car_se_form_li {
+	width: 100%;
+}
+
+.mail_request input {
+	width: 87.5%;
+}
+
+.popup__request_cont_inp_adress {
+	margin-bottom: -20px;
+	margin-top: -10px;
+}
+
+.popup__request_sum {
+	margin-top: 12px;
+	height: 155px;
+}
+
+.popup__request_sum_cont {
+	top: 22px;
+	left: 22px;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.popup__request_sum .basket-form__btn-form {
+	margin-left: -4px;
+	margin-top: -11px;
+	width: 96%;
+	font-size: 17px;
+	height: 54px;
+}
+
+.popup__request_sum_price1-price,
+.popup__request_sum_price1-percent {
+	font-size: 15px;
+}
+
+/* ПОПАП Запрос на торг */
+
+.popup__price-offers {
+	width: 100%;
+}
+
+.table-offers {
+	display: none;
+}
+
+.popup__price-offers h2 {
+	width: 100%;
+}
+
+.table-offers-mob {
+	display: block;
+}
+
+.table-offers-mob_item {
+	padding: 16px 0 24px 0;
+	border-bottom: 1px solid #F0F0F0;
+	border-top: 1px solid #F0F0F0;
+	margin-top: -1px;
+}
+
+.table-offers-mob_item_cont {
+	display: flex;
+}
+
+.table-offers-mob_item_cont_img {
+	height: 40px;
+	margin-right: 16px;
+	min-width: 40px;
+}
+
+.table-offers-mob_item_cont_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.table-offers-mob_item_cont_heading,
+.table-offers-mob_item_cont_specifics {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 12px;
+}
+
+.table-offers-mob_item_cont_heading_p {
+	font-size: 11px;
+	line-height: 10px;
+	opacity: 0.6;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.table-offers-mob_item_cont_heading_p2 {
+	font-size: 11px;
+	line-height: 10px;
+	color: #000;
+	font-weight: 400;
+}
+
+.table-offers-mob_item_price {
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
+}
+
+.table-offers-mob_item_price2 {
+	font-size: 10px;
+	opacity: 0.5;
+}
+
+.table-offers-mob_item_prices {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.table-offers-mob_item .specifications-product td {
+	vertical-align: top;
+	padding-bottom: 8px;
+	width: auto;
+}
+
+.table-offers-mob_item .specifications-product {
+	margin-top: 4px;
+}
+
+.table-offers-mob_item_buy {
+	display: flex;
+	gap: 6px;
+	margin-left: 52px;
+	margin-top: 12px;
+}
+
+.table-offers-mob_item_buy .count_i {
+	padding: 0;
+	margin: 0;
+}
+
+.table-offers-mob_item_buy .count_m {
+	margin: 0;
+}
+
+.table-offers-mob_item_buy .count_p {
+	margin: 0;
+	right: -7px;
+}
+
+.table-offers-mob_item_buy .btn {
+	padding: 11px 22px;
+	border-radius: 26px;
+	width: 80%;
+}
+
+
+/* ПОПАП авторизация */
+
+.popup_authorization {
+	width: 100%;
+	padding: 20px 27px 38px 27px;
+	box-sizing: border-box;
+}
+
+.popup_authorization h2 {
+	margin-bottom: 12px;
+}
+
+.popup_authorization .tabs-border {
+	width: 150px;
+	margin-bottom: 16px;
+	margin-top: 4px;
+}
+
+.popup_authorization input {
+	width: 87.5%;
+}
+
+.popup_authorization .basket-form__btn-form {
+	width: 100%;
+	margin: 18px 0 30px -3px;
+	font-size: 17px;
+	height: 64px;
+}
+
+.popup_authorization .basket__total-stripe {
+	width: 100%;
+}
+
+.basket__total-stripe_text {
+	bottom: 9px;
+	left: 40%;
+}
+
+.btn-fb {
+	width: 100%;
+	padding: 9px 49px;
+	font-size: 12px;
+}
+
+.btn-tw {
+	width: 100%;
+	padding: 9px 49px;
+	font-size: 12px;
+}
+
+.popup_authorization_legal {
+	font-size: 11px;
+	margin-top: 26px;
+}
+
+#password-recovery label {
+	margin-bottom: -14px;
+}
+
+/* ПОПАП подбор товаров и услуг */
+
+.popup__podbor-tov {
+	width: 100%;
+	background-color: white;
+	padding-bottom: 6px;
+	margin-bottom: 30px;
+}
+
+.popup__podbor-tov h2 {
+	text-align: left;
+	padding-left: 14px;
+	padding-top: 17px;
+	margin-bottom: 8px;
+}
+
+.popup__podbor-tov label {
+	text-align: left;
+}
+
+.popup__podbor-tov .car_se_form_top_home__selects {
+	padding-left: 14px;
+}
+
+.popup__podbor-tov .car_se_form_top_home__selects select{
+	border-radius: 25px;
+}
+
+.popup__podbor-tov .lab2_home {
+	text-align: left;
+}
+
+.popup__podbor-tov .car_se_form_top_home_2 {
+	height: 220px;
+	margin-top: 20px;
+}
+
+
+.popup__podbor-tov .car_se_form_top_home_2 .car_se_form_sub {
+	width: 91%;
+}
+
+.popup__podbor-tov .car_se_form_top_home_2 .car_se_form_top_home__selects select {
+	width: 91%;
 }

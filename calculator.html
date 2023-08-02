@@ -324,7 +324,7 @@
   <!-- Калькулятор -->
   <section class="tire-calculator" id="tire-calculator">
     <div class="wrap">
-      <h1>Калькулятор шин</h1>
+      <h1 class="h1_mob_calc">Калькулятор шин</h1>
       <div class="tire-calculator__fixed">
         <a href="#tire-calculator" class="tire-calculator__fixed-btn">Текущие параметры</a>
         <a href="#tire-calculator" class="tire-calculator__fixed-btn">Новые параметры</a>
@@ -5446,7 +5446,7 @@
   <!-- Конец "Сравнение в табличном виде" -->
 
   <!-- Вероятно подходящие параметры -->
-  <section class="recommended-parameters" id="recommended-parameters">
+  <section class="recommended-parameters recom_mob" id="recommended-parameters">
     <div class="wrap">
       <div class="recommended-parameters__wrapper section-bordered">
         <h2 class="recommended-parameters__title section-title">Вероятно подходящие параметры под ваш выбор</h2>
@@ -5493,7 +5493,7 @@
 
   <!-- Подобранные шины по новым параметрам -->
   <div class="wrap">
-    <div class="recommended">
+    <div class="recommended recommended_wheel">
       <div class="recommended__inner">
         <h2 class="recommended-title">Подобранные шины по новым параметрам</h2>
         <div class="tabs-border">
@@ -5505,83 +5505,166 @@
           </div>
         </div>
       </div>
-      <div class="relats_slider">
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod1.jpg" />
-              <div class="relat_prod_lab">Новая модель</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Головная оптика</div>
-              <div class="relat_prod_t">
-                Оригинальные фары HELLA BLACK BMW
+      <div id="tab1" class="tabcontent active">
+        <div class="relats_slider">
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod2.jpg" />
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Шипованные шины</div>
+                <div class="relat_prod_t">Continental IceContact 3 TA</div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">3420.87€ — 4000€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod3.jpg" />
+                <div class="relat_prod_lab">Популярное</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Датчики</div>
+                <div class="relat_prod_t">
+                  Датчик давления в шинах для BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
         </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod2.jpg" />
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Шипованные шины</div>
-              <div class="relat_prod_t">Continental IceContact 3 TA</div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+      </div>
+      <div id="tab2" class="tabcontent">
+        <div class="relats_slider2">
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
               </div>
-              <div class="relat_prod_p">3420.87€ — 4000€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod3.jpg" />
-              <div class="relat_prod_lab">Популярное</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Датчики</div>
-              <div class="relat_prod_t">
-                Датчик давления в шинах для BMW
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod2.jpg" />
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod1.jpg" />
-              <div class="relat_prod_lab">Новая модель</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Головная оптика</div>
-              <div class="relat_prod_t">
-                Оригинальные фары HELLA BLACK BMW
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Шипованные шины</div>
+                <div class="relat_prod_t">Continental IceContact 3 TA</div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">3420.87€ — 4000€</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod3.jpg" />
+                <div class="relat_prod_lab">Популярное</div>
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Датчики</div>
+                <div class="relat_prod_t">
+                  Датчик давления в шинах для BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -5590,100 +5673,204 @@
 
   <!-- Подобранные диски по новым параметрам -->
   <div class="wrap">
-    <div class="recommended-wheel">
+    <div class="recommended recommended2">
       <div class="recommended__inner">
         <h2 class="recommended-title">Подобранные диски по новым параметрам</h2>
-        <ul class="tabs__list recommended__tabs">
-          <li class="tabs__item tabs__item--active">
-            <button class="tabs__button">По заводским параметрам</button>
-          </li>
-          <li class="tabs__item">
-            <button class="tabs__button">По новым</button>
-          </li>
-        </ul>
+        <div class="tabs-border">
+          <div class="tab-prod">
+            <a class="tablinks2 active" onclick="openTab2(event, 'tab3')">По заводским параметрам</a>
+          </div>
+          <div class="tab-prod">
+            <a class="tablinks2" onclick="openTab2(event, 'tab4')">По новым</a>
+          </div>
+        </div>
       </div>
-      <div class="relats_slider">
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod1.jpg" />
-              <div class="relat_prod_lab">Новая модель</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Головная оптика</div>
-              <div class="relat_prod_t">
-                Оригинальные фары HELLA BLACK BMW
+      <div id="tab3" class="tabcontent2 active">
+        <div class="relats_slider">
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod2.jpg" />
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Шипованные шины</div>
+                <div class="relat_prod_t">Continental IceContact 3 TA</div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">3420.87€ — 4000€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod3.jpg" />
+                <div class="relat_prod_lab">Популярное</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Датчики</div>
+                <div class="relat_prod_t">
+                  Датчик давления в шинах для BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
         </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod2.jpg" />
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Шипованные шины</div>
-              <div class="relat_prod_t">Continental IceContact 3 TA</div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+      </div>
+      <div id="tab4" class="tabcontent2">
+        <div class="relats_slider2">
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
               </div>
-              <div class="relat_prod_p">3420.87€ — 4000€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod3.jpg" />
-              <div class="relat_prod_lab">Популярное</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Датчики</div>
-              <div class="relat_prod_t">
-                Датчик давления в шинах для BMW
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod2.jpg" />
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
-        </div>
-        <div class="relats_slide">
-          <a href="#" class="relat_prod">
-            <div class="relat_prod_img">
-              <img src="demo/prod1.jpg" />
-              <div class="relat_prod_lab">Новая модель</div>
-            </div>
-            <div class="relat_prod_r">
-              <div class="relat_prod_type">Головная оптика</div>
-              <div class="relat_prod_t">
-                Оригинальные фары HELLA BLACK BMW
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Шипованные шины</div>
+                <div class="relat_prod_t">Continental IceContact 3 TA</div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">3420.87€ — 4000€</div>
               </div>
-              <div class="relat_prod_sku">tr21342</div>
-              <div class="relat_prod_e">
-                Gloss Black with Milled Accents
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod3.jpg" />
+                <div class="relat_prod_lab">Популярное</div>
               </div>
-              <div class="relat_prod_p">162.87€ — 323.70€</div>
-            </div>
-            <div class="clear"></div>
-          </a>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Датчики</div>
+                <div class="relat_prod_t">
+                  Датчик давления в шинах для BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
+          <div class="relats_slide">
+            <a href="#" class="relat_prod">
+              <div class="relat_prod_img">
+                <img src="demo/prod1.jpg" />
+                <div class="relat_prod_lab">Новая модель</div>
+              </div>
+              <div class="relat_prod_r">
+                <div class="relat_prod_type">Головная оптика</div>
+                <div class="relat_prod_t">
+                  Оригинальные фары HELLA BLACK BMW
+                </div>
+                <div class="relat_prod_sku">tr21342</div>
+                <div class="relat_prod_e">
+                  Gloss Black with Milled Accents
+                </div>
+                <div class="relat_prod_p">162.87€ — 323.70€</div>
+              </div>
+              <div class="clear"></div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Конец "Подобранные диски по новым параметрам" -->
+
+  <div class="bot_nav_bg">
+    <div class="wrap">
+      <nav class="bot_nav">
+        <ul>
+          <li class="bot_nav_1">
+            <a href="#"><span>Калькулятор шин</span></a>
+          </li>
+          <li class="bot_nav_2">
+            <a href="#"><span>Справочная</span></a>
+          </li>
+          <li class="bot_nav_3">
+            <a href="#"><span>Продать товар/услугу</span></a>
+          </li>
+          <li class="bot_nav_4">
+            <a href="#"><span>Статус доставки </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <footer>
     <div class="wrap">

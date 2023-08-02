@@ -663,7 +663,7 @@
         </p>
       </div>
       <div class="car-service_about__video">
-        <a href="#video">
+        <a href="#video" class="modalLink"  data-videoWrap="videoIframe" data-video="v7wdcadgRfc">
           <img src="demo/car-service-about.png" alt="О сервисе">
           <div class="car-service_about__video_icon-play"></div>
           <div class="car-service_about__video_backgr"></div>
@@ -1088,7 +1088,26 @@
     </div>
   </div>
   <!-- Конец "Фото из инстаграм" -->
-
+  <div class="bot_nav_bg">
+    <div class="wrap">
+      <nav class="bot_nav">
+        <ul>
+          <li class="bot_nav_1">
+            <a href="#"><span>Калькулятор шин</span></a>
+          </li>
+          <li class="bot_nav_2">
+            <a href="#"><span>Справочная</span></a>
+          </li>
+          <li class="bot_nav_3">
+            <a href="#"><span>Продать товар/услугу</span></a>
+          </li>
+          <li class="bot_nav_4">
+            <a href="#"><span>Статус доставки </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <footer>
     <div class="wrap">
@@ -1284,15 +1303,13 @@
   <!-- Конец "Попап с поиском" -->
 
   <!-- Попап "Просмотр видео" -->
-  <div class="popup_search" id="video">
+  <div class="popup_search modalVideo" id="video">
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
     <div class="popup__body">
       <div class="popup__video_wrap">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v7wdcadgRfc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <div id="videoIframe">
+        </div>
       </div>
     </div>
   </div>

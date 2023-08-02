@@ -221,15 +221,15 @@ select {
 }
 
 .parts_mob {
-	display: none;	
+  display: none;
 }
 
 .adv_mob {
-	display: none;
+  display: none;
 }
 
 .brands_mob {
-	display: none;
+  display: none;
 }
 
 .head_lcc {
@@ -803,11 +803,6 @@ footer {
   padding: 0 0 15px 0;
 }
 
-/* ТОВАР */
-
-.tabs-border {
-  padding-bottom: 7px;
-}
 
 /* ПОПАПЫ */
 
@@ -1036,19 +1031,19 @@ footer {
 }
 
 .parts_mob {
-	display: none;	
+  display: none;
 }
 
 .adv_mob {
-	display: none;
+  display: none;
 }
 
 .search_model_mob {
-	display: none;
+  display: none;
 }
 
 .adv-video_mob {
-	display: none;
+  display: none;
 }
 
 .brands__img {
@@ -1270,6 +1265,18 @@ input {
 
 /* Товар */
 
+.basic-info__media-mob {
+	display: none;
+}
+
+.product-offer_mob {
+	display: none;
+}
+
+.tabs-border {
+  padding-bottom: 7px;
+}
+
 .heading-product h1 {
   font-size: 40px;
   width: 461px;
@@ -1349,7 +1356,7 @@ input {
   display: flex;
   gap: 20px;
   width: 708px;
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .product-offer {
@@ -1403,6 +1410,10 @@ input {
   width: 100%;
 }
 
+.all-specifications_heading_mob {
+	display: none;
+}
+
 .product-offer__buttons__btn2 span,
 .product-offer__buttons__btn span {
   padding-right: 21px;
@@ -1410,6 +1421,10 @@ input {
 
 .wrap_mob_plansh {
   width: 100%;
+}
+
+.wrap_product_desktop {
+	display: block;
 }
 
 .nav-products ul {
@@ -1427,17 +1442,503 @@ input {
 .all-specifications {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .all-specifications .specifications-product:nth-child(3) {
-  display: flex;
-  flex-wrap: wrap;
-  height: 90px;
+  display: none;
+}
+
+.planshet_specif {
+  display: block;
+}
+
+.planshet_specif_sum {
+  position: relative;
+  background-color: #ECECEC;
+  font-size: 13px;
+  height: 34px;
+  text-align: center;
+  color: #000;
+  border-radius: 25px;
+  width: 140px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+}
+
+.content_toggle2 {
+	display: block;
+}
+
+.content_block2 {
+  display: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.content_block2.hide {
+  display: block;
+}
+
+.content_block.hide:after {
+	content: "";
+	display: block;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 99%)
+}
+
+.sticky-nav {
+  visibility: hidden;
+}
+
+.advants .relats_slide {
+  width: 119px;
+  height: 160px;
+}
+
+.relats_slide__p2 {
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.relats_slide__p1 {
+  font-size: 30px;
+  margin-top: 43px;
+}
+
+.advants {
+  padding: 33px 76px;
+  height: 286px;
+  margin-bottom: 30px;
+}
+
+.delivery-info {
+  margin-bottom: 2px;
+}
+
+.why_ul {
   width: 100%;
+  grid-template-columns: 1fr;
+  padding-top: 0;
+}
+
+.why_ul li {
+  padding-right: 0;
+  margin-bottom: 16px;
+}
+
+.why_ul li:last-child {
+  margin-bottom: 2px;
+}
+
+.reviews_product_plansh {
+  margin: 20px 0 35px 0;
+}
+
+.delivery-info_mob {
+	display: none;
+}
+
+#relats1 .section-heading,
+#relats2 .section-heading {
+  margin-bottom: 18px;
+}
+
+#relats2 {
+  margin-bottom: 50px;
 }
 
 /* Калькулятор */
 
+.tire-calculator__list {
+  padding-left: 44px;
+}
+
+.tire-calculator__wrapper {
+  width: 650px;
+}
+
+.tire-calculator__item:nth-child(n+3) {
+  margin-top: 0;
+}
+
+.tire-calculator__block {
+  padding-top: 10px;
+}
+
+.tire-calculator__block:nth-child(2n) {
+  margin-right: 0;
+}
+
 .images-titles {
   display: none;
+}
+
+.wheels-parameters__wrapper {
+  margin-top: 0;
+}
+
+.wheels-parameters__wrapper + .wheels-parameters__wrapper {
+  margin-top: 0;
+}
+
+.comparison-parameters {
+  margin-top: 45px;
+}
+
+#recommended-parameters {
+  margin-top: 45px;
+}
+
+.recom_mob .recommended-parameters__link {
+  font-size: 14px;
+  width: 190px;
+  margin-right: 8px;
+}
+
+.recom_mob .recommended-parameters__list li:nth-child(9),
+.recom_mob .recommended-parameters__list li:nth-child(10),
+.recom_mob .recommended-parameters__list li:nth-child(8),
+.recom_mob .recommended-parameters__list li:nth-child(7) {
+  display: none;
+}
+
+.recom_mob .recommended-parameters__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:44px;
+}
+
+.recom_mob .recommended-parameters__item:nth-child(n+6) {
+  margin: 0;
+}
+
+.recommended__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 26px;
+  margin-top: 10px;
+}
+
+.recommended2 {
+	margin-top: -10px;
+	margin-bottom: 80px;
+}
+
+/* БЛОГ */
+
+.slide-blogs {
+  width: 330px;
+}
+
+.slide-blogs_img {
+  width: 330px;
+}
+
+.head-articles .orders {
+  margin-left: 273px;
+}
+
+.blog-articles .btn_c4 {
+  margin-top: 31px;
+  margin-bottom: 49px;
+}
+
+/* СРАВНЕНИЕ */
+
+.compare__arrows_arrow4 {
+  left: -524px;
+  top: 69px;
+}
+
+.compare .tabs-border {
+  height: 35px;
+}
+
+.compare .tablinks {
+  padding-bottom: 8px;
+}
+
+.compare__arrows_arrow {
+  top: 74px;
+}
+
+.compare-filter__param {
+  padding-top: 7px;
+}
+
+.icon-basket-del {
+  background: url(images/basket-del.svg) no-repeat;
+  background-position-x: 157px;
+  background-position-y: 3px;
+}
+
+.compare__arrows_arrow3 {
+  top: 263px;
+  left: -522px;
+}
+
+.compare__arrows_arrow2 {
+  top: 263px;
+}
+
+.prods-compare__imgs_item {
+  width: 210px;
+}
+
+.prods-compare__imgs_item_img {
+  height: 120px;
+}
+
+.prods-compare__imgs_item_name {
+  line-height: 16px;
+}
+
+.prods-compare__param__items_item {
+  width: 210px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.prods-compare__imgsWrap-sticky {
+  width: 708px;
+}
+
+.sticky-nav-compare {
+  height: 137px;
+}
+
+.sticky-nav-compare .compare__arrows_arrow3 {
+  top: 44px;
+  left: -529px;
+}
+
+.sticky-nav-compare .compare__arrows_arrow2 {
+  top: 50px;
+}
+
+.sticky-nav-compare .prods-compare__imgs_item_name {
+  font-size: 11px;
+  line-height: 12px;
+}
+
+
+/* ПОПАП размер шин */
+
+.popup__body {
+  width: 100%;
+}
+
+.popup__selection-tires h2 {
+  margin-bottom: 30px;
+}
+
+.popup__selection-tires {
+  position: relative;
+	width: 708px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.popup__selection-tires .car_se_form_add3 {
+  margin-top: 179px;
+}
+
+.popup__selection-tires .car_se_form_rem3 {
+  margin-top: 180px;
+}
+
+.popup__selection-tires_front, .popup__selection-tires_back {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.popup__selection-tires_front, .popup__selection-tires_back {
+  position: relative;
+  display: block;
+}
+
+.popup__selection-tires .car_se_form_li {
+  width: 155px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(1),
+.popup__selection-tires_back .car_se_form_li:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(2),
+.popup__selection-tires_back .car_se_form_li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 173px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(3),
+.popup__selection-tires_back .car_se_form_li:nth-child(3) {
+  position: absolute;
+  top: 79px;
+  left: 0;
+}
+
+.popup__selection-tires_front .car_se_form_sep:nth-child(4),
+.popup__selection-tires_back .car_se_form_sep:nth-child(4) {
+  position: absolute;
+  top: 112px;
+  left: 162px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(5),
+.popup__selection-tires_back .car_se_form_li:nth-child(5) {
+  position: absolute;
+  top: 79px;
+  left: 173px;
+}
+
+.popup__selection-tires_front .car_se_form_sep:nth-child(6),
+.popup__selection-tires_back .car_se_form_sep:nth-child(6) {
+  position: absolute;
+  top: 112px;
+  left: 334px;
+}
+
+.popup__selection-tires_front .car_se_form_li:nth-child(7),
+.popup__selection-tires_back .car_se_form_li:nth-child(7) {
+  position: absolute;
+  top: 79px;
+  left: 347px;
+}
+
+.popup__selection-tires_front .car_se_form_li2:nth-child(8),
+.popup__selection-tires_back .car_se_form_li2:nth-child(8) {
+  position: absolute;
+  top: 79px;
+  left: 510px;
+}
+
+.popup__selection-tires_back {
+  margin-top: 19px;
+  margin-bottom: 167px;
+}
+
+/* ПОПАП Запрос на торг */
+
+.popup__request {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 708px;
+  margin: 0 auto;
+  padding: 30px 30px 50px 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.table-offers-mob {
+  display: none;
+}
+.popup__request_cont {
+  padding: 0;
+}
+
+.popup__request_form {
+	width: 648px;
+}
+
+.popup__request_sum {
+  width: 648px;
+  border-radius: 20px;
+  height: 104px;
+  box-sizing: border-box;
+}
+
+.popup__request textarea {
+  width: 606px;
+}
+
+.popup__request_sum_cont {
+  top: 30px;
+  left: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.popup__request_sum .basket-form__btn-form {
+  margin-left: 10px;
+  margin-top: -16px;
+}
+
+.popup__request_cont_inp select {
+  height: 42px;
+  border-radius: 26px;
+}
+
+.popup__request_cont .lab2 {
+  padding-bottom: 7px;
+}
+
+.popup__request_cont_inp_adress .basket-form__delivery__forms_street {
+  height: 14px;
+}
+
+.basket-form__delivery__forms_index {
+  height: 14px;
+}
+
+/* ПОПАП Предложения цен */
+
+.popup__price-offers {
+  width: 708px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 28px 35px 45px 28px;
+  margin-bottom: 40px;
+}
+
+.popup__price-offers h2 {
+  width: 600px;
+}
+
+.table-offers_heading {
+  font-size: 10px;
+}
+
+.table-offers td:nth-child(3) {
+  width: 260px;
+}
+
+.table-offers_body td:nth-child(2), .table-offers_body td:nth-child(3) {
+  font-size: 14px;
+}
+
+.table-offers td:first-child {
+  margin-right: 10px;
+}
+
+.table-offers td:nth-child(4) {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.table-offers_body_price {
+  font-size: 14px;
+}
+
+.table-offers_body_price-credit {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.table-offers_body td:nth-child(2) {
+  padding-left: 8px;
+}
+
+.table-offers td:nth-child(2) {
+  padding-left: 8px;
 }

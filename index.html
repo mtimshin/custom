@@ -314,8 +314,8 @@
       <h1>Купить и продать авто <br />товары и услуги</h1>
       <!-- Кнопки для мобильного внутри слайдера -->
       <div class="home_btn-head_mob">
-        <a href="#" class="btn home_btn-head_mob_btn1">Подбор товаров</a>
-        <a href="#" class="btn home_btn-head_mob_btn2">Подбор услуг</a>
+        <a href="#podbor_tovarov" class="btn home_btn-head_mob_btn1">Подбор товаров</a>
+        <a href="#podbor_uslug" class="btn home_btn-head_mob_btn2">Подбор услуг</a>
       </div>
       <!-- Конец "Кнопки для мобильного внутри слайдера" -->
       <div id="slider_dots"></div>
@@ -1342,7 +1342,7 @@
           <h3 class="info-block__title">
             Новое поступление <br />дисков K&K
           </h3>
-          <a href="#video" class="info-block__play">
+          <a href="#video" class="info-block__play modalLink" data-videoWrap="videoIframe" data-video="v7wdcadgRfc">
             <img class="info-block__play--icon" src="images/icon-play.svg" alt="play" />
           </a>
         </div>
@@ -2800,45 +2800,45 @@
     <h1>Поиск по бренду</h1>
     <ul class="brands_mob_list">
       <li>
-      <a href="#">
-        <img src="images/logotypes-01.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-02.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-03.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-04.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-05.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-06.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-07.png" alt="лого">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="images/logotypes-08.png" alt="лого">
-      </a>
-    </li>
+        <a href="#">
+          <img src="images/logotypes-01.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-02.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-03.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-04.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-05.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-06.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-07.png" alt="лого">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/logotypes-08.png" alt="лого">
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -2858,7 +2858,7 @@
         </div>
         <div class="info-block__item-bottom" style="background-image: url(demo/info-block-03.png)">
           <h3 class="info-block__title">Новое поступление дисков K&amp;K</h3>
-          <a href="#video" class="info-block__play">
+          <a href="#video" class="info-block__play modalLink" data-videoWrap="videoIframe" data-video="v7wdcadgRfc">
             <img class="info-block__play--icon" src="images/icon-play.svg" alt="play" />
           </a>
         </div>
@@ -3204,7 +3204,7 @@
   <div class="popup_search" id="login">
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
-    <div class="popup_search__body">
+    <div class="popup_search__body popup__body">
       <div class="popup_authorization">
         <h2>Личный кабинет</h2>
         <form action="#" method="get">
@@ -3259,7 +3259,7 @@
   <div class="popup_search" id="password-recovery">
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
-    <div class="popup_search__body">
+    <div class="popup_search__body popup__body">
       <div class="popup_authorization">
         <h2>Напомнить пароль</h2>
         <form action="#" method="get">
@@ -3274,20 +3274,191 @@
   <!-- Конец "Попап "Восстановление пароля" -->
 
   <!-- Попап "Просмотр видео" -->
-  <div class="popup_search" id="video">
+  <div class="popup_search modalVideo" id="video">
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
     <div class="popup__body">
       <div class="popup__video_wrap">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v7wdcadgRfc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <div id="videoIframe">
+        </div>
       </div>
     </div>
   </div>
   <!-- Конец "Просмотр видео" -->
 
+  <!-- Попап "Подбор товаров МОБИЛА" -->
+  <div class="popup_search" id="podbor_tovarov">
+    <a href="#closeModal" class="popup__close"></a>
+    <a href="#closeModal" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__podbor-tov">
+        <h2>Поиск товаров</h2>
+        <div class="car_se">
+          <ul class="car_se_top">
+            <li class="car_se_top_g">
+              <a href="#"><span>Поиск по машине</span><span class="car_se_top_gt">Гараж</span></a>
+            </li>
+            <li class="car_se_top_p active">
+              <a href="#">Поиск по параметрам</a>
+            </li>
+            <li class="car_se_top_b"><a href="#">Поиск по месту</a></li>
+          </ul>
+          <div class="car_se_form">
+            <form action="#" method="get">
+              <div class="car_se_form_top">
+                <div class="car_se_form_li">
+                  <label class="lab2">Ширина, мм</label>
+                  <select>
+                    <option>220</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_sep">/</div>
+                <div class="car_se_form_li">
+                  <label class="lab2">Высота, %</label>
+                  <select>
+                    <option>95</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_sep">R</div>
+                <div class="car_se_form_li">
+                  <label class="lab2">Диаметр, ‘</label>
+                  <select>
+                    <option>22</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_li2">
+                  <label class="lab2">Тип</label>
+                  <select>
+                    <option>Без шипов</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_sub car_se_form_add_open"></div>
+                <div class="car_se_form_rem">
+                  <a href="#">Убрать заднюю ось</a>
+                </div>
+                <div class="car_se_form_li car_se_form_add_open">
+                  <label class="lab2">Ширина, мм</label>
+                  <select>
+                    <option>220</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_sep car_se_form_add_open">/</div>
+                <div class="car_se_form_li car_se_form_add_open">
+                  <label class="lab2">Высота, %</label>
+                  <select>
+                    <option>95</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_sep car_se_form_add_open">R</div>
+                <div class="car_se_form_li car_se_form_add_open">
+                  <label class="lab2">Диаметр, ‘</label>
+                  <select>
+                    <option>22</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_li2 car_se_form_add_open">
+                  <label class="lab2">Тип</label>
+                  <select>
+                    <option>Без шипов</option>
+                    <option>210</option>
+                    <option>200</option>
+                    <option>190</option>
+                  </select>
+                </div>
+                <div class="car_se_form_add">
+                  <a href="#">На заднюю ось другие параметры</a>
+                </div>
+                <div class="car_se_form_sub">
+                  <input class="btn btn_se" type="submit" value="Подобрать">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Конец "Подбор товаров МОБИЛА" -->
+
+  <!-- Попап "Подбор услуг МОБИЛА" -->
+  <div class="popup_search" id="podbor_uslug">
+    <a href="#closeModal" class="popup__close"></a>
+    <a href="#closeModal" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__podbor-tov">
+        <h2>Поиск услуг</h2>
+        <form action="#" method="get">
+          <div class="car_se_form_top_home_2">
+            <div class="car_se_form_top_home__selects">
+              <select class="select_home_top_3">
+                <option>Дата и время</option>
+                <option>210</option>
+                <option>200</option>
+                <option>190</option>
+              </select>
+              <select class="select_home_top_4">
+                <option>Вид работ</option>
+                <option>65</option>
+                <option>80</option>
+              </select>
+              <select class="select_home_top_4">
+                <option>Место</option>
+                <option>65</option>
+                <option>80</option>
+              </select>
+              <div class="car_se_form_sub">
+                <input class="btn btn_se" type="submit" value="Подобрать">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Конец "Подбор услуг МОБИЛА" -->
+
+  <div class="bot_nav_bg">
+    <div class="wrap">
+      <nav class="bot_nav">
+        <ul>
+          <li class="bot_nav_1">
+            <a href="#"><span>Калькулятор шин</span></a>
+          </li>
+          <li class="bot_nav_2">
+            <a href="#"><span>Справочная</span></a>
+          </li>
+          <li class="bot_nav_3">
+            <a href="#"><span>Продать товар/услугу</span></a>
+          </li>
+          <li class="bot_nav_4">
+            <a href="#"><span>Статус доставки </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <footer>
     <div class="wrap">

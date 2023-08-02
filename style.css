@@ -2211,6 +2211,7 @@ textarea:focus {
 #slider_dots .slick-dots,
 .news_slider .slick-dots,
 .relats_slider .slick-dots,
+.relats_slider2 .slick-dots,
 .relats_slider_inst .slick-dots,
 .relats_slider_blog .slick-dots,
 .relats_slider_sales .slick-dots,
@@ -2363,6 +2364,7 @@ button:not(:disabled),
 }
 
 .relats_slider .slick-dots,
+.relats_slider2 .slick-dots,
 .relats_slider_inst .slick-dots,
 .relats_slider_blog .slick-dots,
 .relats_slider_sales .slick-dots,
@@ -2377,6 +2379,7 @@ button:not(:disabled),
 #slider_dots .slick-dots li,
 .news_slider .slick-dots li,
 .relats_slider .slick-dots li,
+.relats_slider2 .slick-dots li,
 .relats_slider_inst .slick-dots li,
 .relats_slider_blog .slick-dots li,
 .relats_slider_sales .slick-dots li,
@@ -2389,6 +2392,7 @@ button:not(:disabled),
 #slider_dots .slick-dots li button,
 .news_slider .slick-dots li button,
 .relats_slider .slick-dots li button,
+.relats_slider2 .slick-dots li button,
 .relats_slider_inst .slick-dots li button,
 .relats_slider_blog .slick-dots li button,
 .relats_slider_sales .slick-dots li button,
@@ -2410,6 +2414,7 @@ button:not(:disabled),
 }
 
 .relats_slider .slick-dots li button,
+.relats_slider2 .slick-dots li button,
 .relats_slider_inst .slick-dots li button,
 .relats_slider_blog .slick-dots li button,
 .relats_slider_sales .slick-dots li button,
@@ -2430,18 +2435,22 @@ button:not(:disabled),
 }
 
 .relats_slider .slick-dots li button:hover,
+.relats_slider2 .slick-dots li button:hover,
 .relats_slider_inst .slick-dots li button:hover,
 .relats_slider_blog .slick-dots li button:hover,
-.relats_slider_sales .slick-dots li button:hover,
 .relats_slider_parts .slick-dots li button:hover,
 .relats_slider_brands .slick-dots li button:hover,
 .relats_slider_inst .slick-dots li.slick-active button,
 .relats_slider_blog .slick-dots li.slick-active button,
-.relats_slider_sales .slick-dots li button:hover,
 .relats_slider_parts .slick-dots li.slick-active button,
 .relats_slider_brands .slick-dots li.slick-active button,
 .relats_slider .slick-dots li.slick-active button {
 	background: #BC8E36;
+}
+
+.relats_slider_sales .slick-dots li.slick-active button,
+.relats_slider_sales .slick-dots li button:hover {
+	background: #DC4333;
 }
 
 .relats_slider_advants .slick-dots li.slick-active button,
@@ -3830,6 +3839,7 @@ button:not(:disabled),
 }
 
 .relats_slider .slick-arrow,
+.relats_slider2 .slick-arrow,
 .relats_slider_inst .slick-arrow,
 .relats_slider_blog .slick-arrow,
 .relats_slider_sales .slick-arrow,
@@ -3840,6 +3850,7 @@ button:not(:disabled),
 }
 
 .relats_slider .slick-arrow:hover,
+.relats_slider2 .slick-arrow:hover,
 .relats_slider_inst .slick-arrow:hover,
 .relats_slider_blog .slick-arrow:hover,
 .relats_slider_sales .slick-arrow,
@@ -3882,6 +3893,7 @@ button:not(:disabled),
 
 
 .relats_slider,
+.relats_slider2,
 .relats_slider_inst,
 .relats_slider_blog,
 .relats_slider_sales,
@@ -5408,6 +5420,15 @@ body::after {
 
 /* КАЛЬКУЛЯТОР */
 
+.recommended .tabs-border {
+	width: 243px;
+}
+
+.recommended_wheel {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
 .tire-calculator__fixed {
 	position: fixed;
 	top: 0;
@@ -5646,7 +5667,6 @@ body::after {
 
 .tire-calculator__block {
 	padding: 30px;
-	width: 50%;
 	background: #F4F4FC;
 	border-radius: 20px
 }
@@ -6155,13 +6175,13 @@ table {
 }
 
 .recommended {
-	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
-.recommended-wheel {
-	margin-top: 40px;
-	margin-bottom: 120px;
+.recommended2 {
+	margin-top: -10px;
+	margin-bottom: 80px;
 }
 
 .recommended__inner {
@@ -6337,7 +6357,7 @@ table {
 @media screen and (min-width: 1200px) {
 	.tire-calculator__block {
 		padding: 30px;
-		width: 50%;
+		width: 500px;
 		background: #F4F4FC;
 		border-radius: 20px
 	}
@@ -6345,7 +6365,7 @@ table {
 
 @media screen and (min-width: 1200px) {
 	.tire-calculator__block+.tire-calculator__block {
-		margin-left: 50px
+		margin-left: 10px
 	}
 }
 
@@ -6383,9 +6403,6 @@ table {
 }
 
 @media screen and (min-width: 768px) {
-	.tire-calculator__item {
-		width: 49%
-	}
 
 	.tire-calculator__item:nth-child(2n) {
 		margin-left: 2%
@@ -6915,8 +6932,21 @@ table {
 
 /* ТОВАР */
 
+.basic-info__media-mob {
+	display: none;
+}
+
+.product-offer_mob {
+	display: none;
+}
+
+.planshet_specif {
+	display: none;
+}
+
 .heading-product {
 	display: flex;
+	grid-column: span 2;
 }
 
 .heading-product h1 {
@@ -6944,6 +6974,19 @@ table {
 .product {
 	display: flex;
 	margin-top: 37px;
+}
+
+.delivery-info_mob {
+	display: none;
+}
+
+.wrap_product_desktop {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.all-specifications_heading_mob {
+	display: none;
 }
 
 .basic-info {
@@ -7107,6 +7150,7 @@ table {
 	background-color: #f3f3f4;
 	margin-left: 20px;
 	padding: 28px;
+	margin-top: 34px;
 }
 
 .product-offer__head {
@@ -7841,6 +7885,18 @@ table {
 }
 
 
+.content_block2 {
+	display: none;
+}
+
+.content_block2.hide {
+	display: none;
+}
+
+.content_toggle2 {
+	display: none;
+}
+
 
 /* END ТОВАР */
 
@@ -7872,7 +7928,9 @@ table {
 
 .articles-prev li img {
 	margin-right: 30px;
-	object-fit: none;
+	width: 278px;
+	height: 163px;
+	object-fit: cover;
 }
 
 .articles-prev__text p {
@@ -9589,6 +9647,10 @@ table {
 
 /* ПОПАП ПРЕДЛОЖЕНИЯ ЦЕН НА ШИНЫ */
 
+.table-offers-mob {
+	display: none;
+}
+
 .popup__body {
 	width: 1100px;
 	position: absolute;
@@ -9764,6 +9826,22 @@ th {
 	text-align: left;
 }
 
+.mail_request {
+	margin-left: 30px;
+}
+
+.price_request {
+	margin-right: 30px;
+}
+
+.price_request_inp {
+	width: 125px;
+}
+
+.popup__request_form {
+	width: 752px;
+}
+
 .popup__request_cont {
 	padding: 44px 12px 44px 60px;
 }
@@ -9830,6 +9908,7 @@ th {
 	padding: 38px 80px;
 	background-color: white;
 	text-align: left;
+	margin: 0 auto;
 }
 
 .popup_authorization h2 {
@@ -9972,9 +10051,24 @@ th {
 	margin: 60px auto;
 }
 
+.popup__video_wrap iframe {
+	width: 100%;
+	height: 100%;
+}
+
 /* END ПОПАП Видео */
 
 /* Сравнение */
+
+.sticky-nav-compare .compare__arrows_arrow2 {
+	top: 64px;
+    right: 19px;
+}
+
+.sticky-nav-compare .compare__arrows_arrow3 {
+	top: 57px;
+    left: -986px;
+}
 
 .compare {
 	position: relative;
@@ -10018,6 +10112,7 @@ th {
 
 .compare .tablinks.active {
 	border-bottom: 2px solid #000;
+	
 }
 
 .compare-parameters {
@@ -10072,6 +10167,7 @@ th {
 	border: 1px solid #DAD9DE;
 	border-radius: 22px;
 	margin-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .prods-compare__imgsWrap {
@@ -10171,6 +10267,11 @@ th {
 	z-index: 1000;
 }
 
+.compare__arrows2 {
+	position: absolute;
+	z-index: 10000;
+}
+
 .compare__arrows_arrow {
 	position: absolute;
 	top: 91px;
@@ -10209,17 +10310,18 @@ th {
 .sticky-nav-compare {
 	display: none;
 	position: fixed;
-	top: 0;
+	top: -200px;
 	left: 0;
 	vertical-align: bottom;
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0px 5px 20px rgb(0 0 0 / 11%);
-	z-index: 999;
+	z-index: 10000;
 	height: 160px;
 }
 
 .prods-compare__imgsWrap-sticky {
+	position: relative;
 	width: 1170px;
 	margin: 0 auto;
 	padding-top: 16px;

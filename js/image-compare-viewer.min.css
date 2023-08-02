@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1023px) {
     .wheels-parameters__wrapper + .wheels-parameters__wrapper {
-        margin-top: 20px
+        margin-top: 0;
     }
 }
 

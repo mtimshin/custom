@@ -324,13 +324,31 @@
   <!-- Конец "Хлебные крошки" -->
 
   <!-- Основная информация о товаре -->
-  <div class="wrap">
+  <div class="wrap wrap_mob_product wrap_product_desktop">
     <div class="heading-product">
       <h1>Шины Kumho WS-71 225/55 R19</h1>
       <a href="#" class="btn icon-compare basic-info__buttons__btn">Добавить к сравнению</a>
     </div>
     <div class="product">
       <section class="basic-info">
+        <div class="basic-info__media-mob">
+          <div class="prod_list_imgs">
+            <div class="prod_list_slider">
+              <div class="prod_list_slide">
+                <img src="demo/prod2.jpg" />
+              </div>
+              <div class="prod_list_slide">
+                <img src="demo/prod1.jpg" />
+              </div>
+              <div class="prod_list_slide">
+                <img src="demo/prod3.jpg" />
+              </div>
+              <div class="prod_list_slide">
+                <img src="demo/prod4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="basic-info__media">
           <div class="slider-product">
             <input type="radio" name="slide_switch" id="id1" checked="checked" />
@@ -386,7 +404,7 @@
             </label>
             <img src="demo/media1.jpg" />
 
-            <a href="#video" class="testTon" id="id10">
+            <a href="#video" class="testTon modalLink" data-videoWrap="videoIframe" data-video="v7wdcadgRfc" id="id10">
               <img src="demo/media1.jpg" width="60" />
             </a>
 
@@ -522,6 +540,95 @@
           </ul>
           <a href="#" class="btn btn_specifications">Подробнее о доставке</a>
         </div>
+        <div class="product-offer_mob">
+          <div class="tabs-prod">
+            <div class="tabs-border" style="margin: 0;">
+              <div class="tab-prod">
+                <a class="tablinks3 active" onclick="openTab3(event, 'tab3')">Стоимость шин</a>
+              </div>
+              <div class="tab-prod">
+                <a class="tablinks3" onclick="openTab3(event, 'tab4')">В рассрочку</a>
+              </div>
+            </div>
+            <div id="tab3" class="tabcontent3 active">
+              <div class="product-offer__option">
+                <p class="product-offer__names">
+                  Передняя ось <span id="brand-front">(Pirelli)</span>
+                </p>
+                <div class="product-offer__parameters">
+                  <a href="#selection-tires" class="btn">
+                    240/40 R20
+                  </a>
+                  <div class="product-offer__count count">
+                    <input type="button" class="count_m" value="">
+                    <input type="text" value="1" class="count_i">
+                    <input type="button" class="count_p" value="">
+                  </div>
+                  <div class="prod_list_by_price">
+                    <h3 class="product-offer__price">75€</h3>
+                    <span class="prod_list_by_price_sht">за 1 шт.</span>
+                  </div>
+                </div>
+                <p class="product-offer__names">
+                  Задняя ось <span id="brand-back">(Kumho) </span><span class="prod_list_by_del"></span>
+                </p>
+                <div class="product-offer__parameters">
+                  <a href="#selection-tires" class="btn">
+                    240/40 R20
+                  </a>
+                  <div class="product-offer__count count">
+                    <input type="button" class="count_m" value="">
+                    <input type="text" value="1" class="count_i">
+                    <input type="button" class="count_p" value="">
+                  </div>
+                  <div class="prod_list_by_price">
+                    <h3 class="product-offer__price">75€</h3>
+                    <span class="prod_list_by_price_sht">за 1 шт.</span>
+                  </div>
+                </div>
+                <div class="product-offer__stripe"></div>
+                <div class="product-offer__price-buy">
+                  <div class="product-offer__price-buy__price">
+                    <h2 class="product-offer__price-text">300.05€</h2>
+                    <p class="product-offer__names">(итого за 4 шт)</p>
+                  </div>
+                  <a class="btn btn_add_product" href="#"><span>В корзину</span></a>
+                </div>
+              </div>
+            </div>
+            <div id="tab4" class="tabcontent3">
+              <div class="product-offer__option">
+                <div class="product-offer__names-credit"></div>
+                <p class="product-offer__names2">Период</p>
+                <p class="product-offer__names2">Первый взнос</p>
+                <div class="product-offer__parameters">
+                  <select class="product-offer__select">
+                    <option>12 мес.</option>
+                    <option>12 мес.</option>
+                    <option>12 мес.</option>
+                    <option>12 мес.</option>
+                    <option>12 мес.</option>
+                  </select>
+                  <select class="product-offer__select">
+                    <option>0% (0€)</option>
+                    <option>0% (0€)</option>
+                    <option>0% (0€)</option>
+                    <option>0% (0€)</option>
+                    <option>0% (0€)</option>
+                  </select>
+                </div>
+                <div class="product-offer__stripe"></div>
+                <div class="product-offer__price-buy">
+                  <div class="product-offer__price-buy__credit">
+                    <h2 class="product-offer__price-text2">12€</h2>
+                    <p class="product-offer__names">в месяц</p>
+                  </div>
+                  <a class="btn btn_credit" href="#">Оформить в рассрочку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <aside class="planshet-price_buy">
         <div class="product-offer">
@@ -648,6 +755,7 @@
 
   <!-- Все характеристики -->
   <div class="wrap tabSection" id="all-specifications">
+    <h2 class="all-specifications_heading_mob">Характеристики</h2>
     <div class="tabs-prod">
       <div class="tabs-border" style="margin: 0;">
         <div class="tab-prod">
@@ -750,6 +858,42 @@
               </tr>
             </tbody>
           </table>
+          <a class="content_toggle2 planshet_specif_sum" href="#">Смотреть всё</a>
+
+          <div class="content_block2">
+            <table class="specifications-product">
+              <tbody>
+                <tr>
+                  <td>Страна производителя:</td>
+                  <td>Италия <img src="images/italy.svg" alt="Италия"></td>
+                </tr>
+                <tr>
+                  <td>Индекс нагрузки:</td>
+                  <td>A (до 13 кг)</td>
+                </tr>
+                <tr>
+                  <td>Максимальная нагрузка на шину, кг:</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>Уровень шума: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #61B73A;">74 <img width="13px" src="images/prod_list_icos_zv.png"
+                      alt="Уровень шума">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Сцепление с дорогой: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #2A79FC;">A <img style="width: 10px;" src="images/prod_list_icos_ms.svg"
+                      alt="Сцепление с дорогой"></td>
+                </tr>
+                <tr>
+                  <td>Энергоэффективность: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #DA3728;">99 <img style="width: 13px" src="images/prod_list_icos_tp.svg"
+                      alt="Энергоэффективность" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div id="tab2" class="tabcontent2">
@@ -758,7 +902,7 @@
             <tbody>
               <tr>
                 <td>Артикул:</td>
-                <td>12312434</td>
+                <td>23278899000</td>
               </tr>
               <tr>
                 <td>Бренд:</td>
@@ -845,11 +989,66 @@
               </tr>
             </tbody>
           </table>
+          <a class="content_toggle2 planshet_specif_sum" href="#">Смотреть всё</a>
+
+          <div class="content_block2">
+            <table class="specifications-product">
+              <tbody>
+                <tr>
+                  <td>Страна производителя:</td>
+                  <td>Италия <img src="images/italy.svg" alt="Италия"></td>
+                </tr>
+                <tr>
+                  <td>Индекс нагрузки:</td>
+                  <td>A (до 13 кг)</td>
+                </tr>
+                <tr>
+                  <td>Максимальная нагрузка на шину, кг:</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>Уровень шума: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #61B73A;">74 <img width="13px" src="images/prod_list_icos_zv.png"
+                      alt="Уровень шума">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Сцепление с дорогой: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #2A79FC;">A <img style="width: 10px;" src="images/prod_list_icos_ms.svg"
+                      alt="Сцепление с дорогой"></td>
+                </tr>
+                <tr>
+                  <td>Энергоэффективность: <span class="info" data-tooltip="Тултип">?</span></td>
+                  <td style="color: #DA3728;">99 <img style="width: 13px" src="images/prod_list_icos_tp.svg"
+                      alt="Энергоэффективность" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Конец "Все характеристики" -->
+
+  <!-- Доставка МОБИЛА -->
+  <div class="wrap delivery-info_mob">
+    <div class="description__stripe"></div>
+    <h2>Доставка</h2>
+    <ul class="specifications__ul-delivery">
+      <li><span>Срок:</span><span>2-4 дня (за 8 €)</span></li>
+      <li>
+        Или самовывоз по адресам:
+        <ul class="specifications__ul-delivery__adress">
+          <li>Эстония, г. Таллин, ул. Каэра, 2-3</li>
+          <li>Россия, г. Пермь, ул. Ленина</li>
+        </ul>
+      </li>
+    </ul>
+    <a class="planshet_specif_sum" href="#">Подробнее о доставке</a>
+  </div>
+  <!-- Конец "Доставка МОБИЛА" -->
+
 
   <!-- Описание -->
   <div class="wrap tabSection" id="description">
@@ -936,28 +1135,28 @@
         <div class="relats_slider_advant">
           <div class="relats_slide">
             <p class="relats_slide__p1">1873</p>
-            <p>Компания основана
+            <p class="relats_slide__p2">Компания основана
               в 1872 году</p>
           </div>
         </div>
         <div class="relats_slider_advant">
           <div class="relats_slide">
             <p class="relats_slide__p1">160</p>
-            <p>160 стран. Присутствие
+            <p class="relats_slide__p2">160 стран. Присутствие
               на всех 5-ти континентах</p>
           </div>
         </div>
         <div class="relats_slider_advant">
           <div class="relats_slide">
             <p class="relats_slide__p1">36 000</p>
-            <p>36 тысяч сотрудников
+            <p class="relats_slide__p2">36 тысяч сотрудников
               по всему миру</p>
           </div>
         </div>
         <div class="relats_slider_advant">
           <div class="relats_slide">
             <p class="relats_slide__p1">1873</p>
-            <p>Компания основана
+            <p class="relats_slide__p2">Компания основана
               в 1872 году</p>
           </div>
         </div>
@@ -1032,7 +1231,7 @@
 
   <!-- Отзывы -->
   <div class="wrap tabSection">
-    <section class="reviews" id="reviews">
+    <section class="reviews reviews_product_plansh" id="reviews">
       <h2 class="section-heading">Отзывы клиентов</h2>
       <div class="reviews__wrapper">
         <div class="reviews__item">
@@ -1409,6 +1608,26 @@
   </div>
   <!-- Конец "Похожие товары" -->
 
+  <div class="bot_nav_bg">
+    <div class="wrap">
+      <nav class="bot_nav">
+        <ul>
+          <li class="bot_nav_1">
+            <a href="#"><span>Калькулятор шин</span></a>
+          </li>
+          <li class="bot_nav_2">
+            <a href="#"><span>Справочная</span></a>
+          </li>
+          <li class="bot_nav_3">
+            <a href="#"><span>Продать товар/услугу</span></a>
+          </li>
+          <li class="bot_nav_4">
+            <a href="#"><span>Статус доставки </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <footer>
     <div class="wrap">
@@ -1968,13 +2187,13 @@
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
     <div class="popup__body">
-      <div class="popup__request">
+      <form action="#" method="get" class="popup__request">
         <div class="popup__request_cont">
-          <form style="width: 752px;" action="#" method="get">
+          <div class="popup__request_form">
             <h2>Запрос на торг по позиции
               «<span id="#">Шины Kumho WS-71 225/55 R19</span>»</h2>
             <div class="popup__request_cont_inp">
-              <label style="margin-right: 30px;" for="name">Ваша цена<input style="width: 125px;" type="number"
+              <label class="price_request" for="name">Ваша цена<input class="price_request_inp" type="number"
                   placeholder="Введите цену"></label>
               <div class="car_se_form_li">
                 <label class="lab2">Срок запроса</label>
@@ -1985,7 +2204,7 @@
                   <option>Месяц</option>
                 </select>
               </div>
-              <label for="email" style="margin-left: 30px;">Эл. почта<input type="email"></label>
+              <label for="email" class="mail_request">Эл. почта<input type="email"></label>
             </div>
             <div class="popup__request_cont_inp_adress">
               <p style="color: black; margin-bottom: 10px;">Адрес <span style="color: #d4af5d;">*</span></p>
@@ -2008,6 +2227,7 @@
               </p>
               <textarea name="comment"></textarea>
             </div>
+          </div>
         </div>
         <div class="popup__request_sum">
           <div class="popup__request_sum_cont">
@@ -2026,22 +2246,20 @@
             <button id="submit" type="button" class="basket-form__btn-form">Отправить</button>
           </div>
         </div>
-        </form>
-      </div>
     </div>
+    </form>
+  </div>
   </div>
   <!-- Конец "Попап "Запрос на торг" -->
 
   <!-- Попап "Просмотр видео" -->
-  <div class="popup_search" id="video">
+  <div class="popup_search modalVideo" id="video">
     <a href="#closeModal" class="popup__close"></a>
     <a href="#closeModal" class="popup__area"></a>
     <div class="popup__body">
       <div class="popup__video_wrap">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v7wdcadgRfc" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        <div id="videoIframe">
+        </div>
       </div>
     </div>
   </div>
@@ -2059,6 +2277,8 @@
 
   <script defer type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
   <link rel="stylesheet" type="text/css" href="js/ion.rangeSlider.css" media="screen" />
+
+  <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 
   <script defer type="text/javascript" src="js/custom.js"></script>
 
