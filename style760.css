@@ -1270,7 +1270,7 @@ input {
 /* Товар */
 
 .basic-info__media-mob {
-	display: none;
+  display: none;
 }
 
 .product-offer_mob {

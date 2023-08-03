@@ -336,6 +336,7 @@ window.addEventListener("load", function (event) {
   }
 });
 
+var initSlider = [];
 function openTab(evt, tabName) {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -347,6 +348,13 @@ function openTab(evt, tabName) {
     tablinks[i].classList.remove("active");
   }
   document.getElementById(tabName).classList.add("active");
+  if (!initSlider[tabName]){
+    initSlider[tabName] = true;
+    var $slider = jQuery('#' + tabName).find('.slick-slider');
+    if(parseFloat($slider.find('.slick-track').css('width')) === 0) {
+      $slider.slick('refresh');
+    }
+  }
   evt.currentTarget.classList.add("active");
 }
 
@@ -359,6 +367,13 @@ function openTab2(evt, tabName) {
   tablinks2 = document.querySelectorAll(".tablinks2");
   for (i = 0; i < tablinks2.length; i++) {
     tablinks2[i].classList.remove("active");
+  }
+  if (!initSlider[tabName]){
+    initSlider[tabName] = true;
+    var $slider = jQuery('#' + tabName).find('.slick-slider');
+    if(parseFloat($slider.find('.slick-track').css('width')) === 0) {
+      $slider.slick('refresh');
+    }
   }
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
@@ -374,6 +389,13 @@ function openTab4(evt, tabName) {
   for (i = 0; i < tablinks2.length; i++) {
     tablinks2[i].classList.remove("active");
   }
+  if (!initSlider[tabName]){
+    initSlider[tabName] = true;
+    var $slider = jQuery('#' + tabName).find('.slick-slider');
+    if(parseFloat($slider.find('.slick-track').css('width')) === 0) {
+      $slider.slick('refresh');
+    }
+  }
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
 }
@@ -387,6 +409,13 @@ function openTab3(evt, tabName) {
   tablinks3 = document.querySelectorAll(".tablinks3");
   for (i = 0; i < tablinks3.length; i++) {
     tablinks3[i].classList.remove("active");
+  }
+  if (!initSlider[tabName]){
+    initSlider[tabName] = true;
+    var $slider = jQuery('#' + tabName).find('.slick-slider');
+    if(parseFloat($slider.find('.slick-track').css('width')) === 0) {
+      $slider.slick('refresh');
+    }
   }
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
@@ -454,7 +483,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let nav = document.querySelector(".sticky-nav-compare");
 
   // Get all the links in the navigation
-  let links = nav.querySelectorAll("a");
+  let links = nav?nav.querySelectorAll("a"):null;
 
   // Get all the sections on the page
   let sections = document.querySelectorAll(".tabSection");
@@ -470,12 +499,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add an event listener to the window object for scroll events
   window.addEventListener("scroll", function () {
     // If the user has scrolled past the top of the navigation, show it
-    if (window.scrollY > 650) {
-      // nav.style.display = "block";
-      nav.style.top = 0;
-    } else {
-      // nav.style.display = "none";
-      nav.style.top = '-200px';
+    if (nav){
+      if (window.scrollY > 650) {
+        // nav.style.display = "block";
+        nav.style.top = 0;
+      } else {
+        // nav.style.display = "none";
+        nav.style.top = '-200px';
+      }
     }
 
     // Loop through each section offset and check if the user has scrolled past it

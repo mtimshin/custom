@@ -230,8 +230,9 @@ header {
 
 .basic-info {
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
+	/*display: grid;*/
+	display: block;
+	/*grid-template-columns: 1fr;*/
 	box-sizing: border-box;
 }
 

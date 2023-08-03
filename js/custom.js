@@ -118,6 +118,7 @@
 					dots: false,
 					variableWidth: true,
 					infinite: true,
+					swipe: true
 				}
 			}
 		]
@@ -408,6 +409,8 @@
 		return false;
 	});
 
+	jQuery('.car_se_form_add_open3, .car_se_form_rem3').hide();
+
 
 
 	jQuery('.prod_list_tab_b').click(function () {
@@ -693,6 +696,18 @@
 	var $arrowLeftCompare = $arrows.find('.compare__arrows_arrow3');
 	var $arrowLeftFilter = $arrows.find('.compare__arrows_arrow4');
 	var stateSlider = true;
+	var widthItem = 280;
+	function widthItemInit() {
+		if (window.innerWidth > 1240) {
+			widthItem = 280;
+		} else if (window.innerWidth <= 1240 && window.innerWidth > 759) {
+			widthItem = 210;
+		} else if (window.innerWidth <= 759) {
+			widthItem = 168;
+		};
+	}
+	widthItemInit();
+	jQuery(window).on('resize', widthItemInit);
 	$compare.each(function () {
 		var $this = jQuery(this);
 		var $thisImgs = $this.find($prodsImgs);
@@ -704,7 +719,7 @@
 		$thisTabs.each(function (v) {
 			widthFilter += jQuery(this).outerWidth();
 		});
-		if ($thisImgs.outerWidth() > $thisImgsItems.length * 280) {
+		if ($thisImgs.outerWidth() > $thisImgsItems.length * widthItem) {
 			$buttons.find($arrowLeftCompare).hide(0);
 			$buttons.find($arrowRightCompare).hide(0);
 			stateSlider = false;
@@ -731,28 +746,28 @@
 		$thisTabs.each(function (v) {
 			widthFilter += jQuery(this).outerWidth();
 		});
-		if (left + 280 + $thisFilter.outerWidth() < widthFilter) {
+		if (left + widthItem + $thisFilter.outerWidth() < widthFilter) {
 			$this.closest($arrows).find('.compare__arrows_arrow').show(0);
 			$this.closest($arrows).find('.compare__arrows_arrow4').show(0);
 		} else {
 			$this.closest($arrows).find('.compare__arrows_arrow').hide(0);
 			$this.closest($arrows).find('.compare__arrows_arrow4').show(0);
 		}
-		$thisFilter.stop().animate({ scrollLeft: left + 280 }, 500, 'swing');
+		$thisFilter.stop().animate({ scrollLeft: left + widthItem }, 500, 'swing');
 	});
 	$arrowLeftFilter.on('click', function () {
 		var $this = jQuery(this);
 		var $thisCompare = jQuery($this.closest('.compare__arrows').attr('data-compare'));
 		var $thisFilter = $thisCompare.find($filter);
 		var left = $thisFilter.scrollLeft();
-		if ((left - 280) < 0) {
+		if ((left - widthItem) < 0) {
 			$this.closest($arrows).find('.compare__arrows_arrow4').hide(0);
 			$this.closest($arrows).find('.compare__arrows_arrow').show(0);
 		} else {
 			$this.closest($arrows).find('.compare__arrows_arrow4').show(0);
 			$this.closest($arrows).find('.compare__arrows_arrow').show(0);
 		}
-		$thisFilter.stop().animate({ scrollLeft: left - 280 }, 500, 'swing');
+		$thisFilter.stop().animate({ scrollLeft: left - widthItem }, 500, 'swing');
 	});
 	$arrowRightCompare.on('click', function () {
 		var $this = jQuery(this);
@@ -761,14 +776,14 @@
 		var $thisItems = $thisCompare.find($prodsItems);
 		var $thisImgsItems = $thisImgs.find('.prods-compare__imgs_item');
 		var left = $thisImgs.scrollLeft();
-		if (left + 280 + $thisImgs.outerWidth() < $thisImgsItems.length * 280) {
+		if (left + widthItem + $thisImgs.outerWidth() < $thisImgsItems.length * widthItem) {
 			$this.closest($arrows).find('.compare__arrows_arrow2').show(0);
 			$this.closest($arrows).find('.compare__arrows_arrow3').show(0);
 		} else {
 			$this.closest($arrows).find('.compare__arrows_arrow2').hide(0);
 		}
-		$thisImgs.stop().animate({ scrollLeft: left + 280 }, 500, 'swing');
-		$thisItems.stop().animate({ scrollLeft: left + 280 }, 500, 'swing');
+		$thisImgs.stop().animate({ scrollLeft: left + widthItem }, 500, 'swing');
+		$thisItems.stop().animate({ scrollLeft: left + widthItem }, 500, 'swing');
 	});
 	$arrowLeftCompare.on('click', function () {
 		var $this = jQuery(this);
@@ -776,14 +791,14 @@
 		var $thisImgs = $thisCompare.find($prodsImgs);
 		var $thisItems = $thisCompare.find($prodsItems);
 		var left = $thisImgs.scrollLeft();
-		if ((left - 280) < 0) {
+		if ((left - widthItem) < 0) {
 			$this.closest($arrows).find('.compare__arrows_arrow3').hide(0);
 		} else {
 			$this.closest($arrows).find('.compare__arrows_arrow3').show(0);
 			$this.closest($arrows).find('.compare__arrows_arrow2').show(0);
 		}
-		$thisImgs.stop().animate({ scrollLeft: left - 280 }, 500, 'swing');
-		$thisItems.stop().animate({ scrollLeft: left - 280 }, 500, 'swing');
+		$thisImgs.stop().animate({ scrollLeft: left - widthItem }, 500, 'swing');
+		$thisItems.stop().animate({ scrollLeft: left - widthItem }, 500, 'swing');
 	});
 	if (stateSlider) {
 		$arrowLeftCompare.trigger('click');
