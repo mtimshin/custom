@@ -8253,12 +8253,13 @@ table {
 
 .related-products-basket {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 19px;
 }
 
 .related-products-basket .relat_prod {
 	width: 142px;
 	padding: 30px;
-	margin-right: 19px;
 }
 
 .related-products-basket .relat_prod_img img {
