@@ -122,7 +122,29 @@
 			}
 		]
 	});
-	jQuery('.prod_list_slider .slick-dots li').on('mouseover', function () {
+	jQuery('.prod_list_slider2 .slick-dots li').on('mouseover', function () {
+		jQuery(this).trigger('click');
+	});
+
+	jQuery('.prod_list_slider2').slick({
+		dots: true,
+		arrows: false,
+		autoplay: false,
+		speed: 0,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 759,
+				settings: {
+					dots: false,
+					variableWidth: true,
+					infinite: true,
+				}
+			}
+		]
+	});
+	jQuery('.prod_list_slider2 .slick-dots li').on('mouseover', function () {
 		jQuery(this).trigger('click');
 	});
 

@@ -198,6 +198,10 @@ header {
 
 /* ТОВАР */
 
+.content_block2.hide {
+	margin-top: -41px;
+}
+
 .tablinks,
 .tablinks2,
 .tablinks3,
@@ -2135,7 +2139,7 @@ footer {
 	width: auto;
 }
 
-.slick-slide img {
+.relats_slider_blog .slick-slide img {
 	height: 100%;
 	width: 100%;
 }

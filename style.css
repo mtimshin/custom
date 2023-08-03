@@ -9463,6 +9463,7 @@ table {
 
 .popup_search__output__items {
 	display: flex;
+	margin-bottom: 60px;
 }
 
 #search_output {
