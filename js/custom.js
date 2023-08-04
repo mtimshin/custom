@@ -123,7 +123,6 @@
 			}
 		]
 	});
-
 	jQuery('.prod_list_slider .slick-dots li').on('mouseover', function () {
 		jQuery(this).trigger('click');
 	});
@@ -134,7 +133,7 @@
 		arrows: true,
 		autoplay: false,
 		speed: 500,
-		slidesTosShow: 2,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		responsive: [
 			{
