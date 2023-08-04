@@ -124,7 +124,7 @@
 		]
 	});
 
-	jQuery('.prod_list_slider2 .slick-dots li').on('mouseover', function () {
+	jQuery('.prod_list_slider .slick-dots li').on('mouseover', function () {
 		jQuery(this).trigger('click');
 	});
 
