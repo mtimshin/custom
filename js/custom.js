@@ -134,7 +134,7 @@
 		arrows: true,
 		autoplay: false,
 		speed: 500,
-		slidesTosShow: 2,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		responsive: [
 			{
